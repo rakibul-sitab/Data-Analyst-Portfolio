@@ -8,3 +8,6 @@ Tips: For data analyst projects with python, I would recomend you to install num
 ## Project 1: Report preparation for a bank's-loan division
 This project is to prepare a report for a bank’s loan division.I was provided a dataset from Practicum100 which is based on some data on customers’ credit worthiness. I found out if a customer’s marital status and number of children has an impact on whether they will default on a loan.My report have been considered when building a credit score for a potential customer. A credit score is used to evaluate the ability of a potential borrower to repay their loan.I complete the entire data analysis process by sharing the findings.
 
+## Project 2: Factors-influence-the-price-of-a-vehicle
+Hundreds of free advertisements for vehicles are published on a site every day.I've analysed data collected over the last few years and determine which factors influence the price of a vehicle.The datasets was provided by Practicum100 which is based on a free vehicles advertisement website.
+
