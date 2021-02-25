@@ -11,3 +11,6 @@ This project is to prepare a report for a bank’s loan division.I was provided 
 ## Project 2: Factors-influence-the-price-of-a-vehicle
 Hundreds of free advertisements for vehicles are published on a site every day.I've analysed data collected over the last few years and determine which factors influence the price of a vehicle.The datasets was provided by Practicum100 which is based on a free vehicles advertisement website.
 
+## Project 3:  Analyze clients' behavior and determine which prepaid plan brings in more revenue
+Telecom operator Megaline offers its clients two prepaid plans, Surf and Ultimate. The commercial department wants to know which of the plans brings in more revenue in order to adjust the advertising budget.The datasets was provided by Practicum100 which is based on 500 Megaline clients.
+
