@@ -14,3 +14,6 @@ Hundreds of free advertisements for vehicles are published on a site every day.I
 ## Project 3:  Analyze clients' behavior and determine which prepaid plan brings in more revenue
 Telecom operator Megaline offers its clients two prepaid plans, Surf and Ultimate. The commercial department wants to know which of the plans brings in more revenue in order to adjust the advertising budget.The datasets was provided by Practicum100 which is based on 500 Megaline clients.
 
+
+## Project 4:  Spot the potential big winners and plan advertising campaigns to earn maximum profit for a video games online stores
+The online store Ice, which sells video games all over the world. User and expert reviews, genres, platforms (e.g. Xbox or PlayStation), and historical data on game sales are available from open sources. I identified patterns that determine whether a game succeeds or not.The datasets was provided by Practicum100 and contains the abbreviation ESRB. The Entertainment Software Rating Board evaluates a game's content and assigns an age rating such as Teen or Mature.
