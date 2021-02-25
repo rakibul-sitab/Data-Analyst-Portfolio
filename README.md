@@ -16,4 +16,4 @@ Telecom operator Megaline offers its clients two prepaid plans, Surf and Ultimat
 
 
 ## Project 4:  Spot the potential big winners and plan advertising campaigns to earn maximum profit for a video games online stores
-The online store Ice, which sells video games all over the world. User and expert reviews, genres, platforms (e.g. Xbox or PlayStation), and historical data on game sales are available from open sources. I identified patterns that determine whether a game succeeds or not.The datasets was provided by Practicum100 and contains the abbreviation ESRB. The Entertainment Software Rating Board evaluates a game's content and assigns an age rating such as Teen or Mature.
+The online store Ice, which sells video games all over the world. User and expert reviews, genres, platforms (e.g. Xbox or PlayStation), and historical data on game sales are available from open sources. I identified the patterns that determine whether a game succeeds or not.The datasets was provided by Practicum100 and contains the abbreviation ESRB. The Entertainment Software Rating Board evaluates a game's content and assigns an age rating such as Teen or Mature.
