@@ -17,3 +17,8 @@ Telecom operator Megaline offers its clients two prepaid plans, Surf and Ultimat
 
 ## Project 4:  Spot the potential big winners and plan advertising campaigns to earn maximum profit for a video games online stores
 The online store Ice, which sells video games all over the world. User and expert reviews, genres, platforms (e.g. Xbox or PlayStation), and historical data on game sales are available from open sources. I identified the patterns that determine whether a game succeeds or not.The datasets was provided by Practicum100 and contains the abbreviation ESRB. The Entertainment Software Rating Board evaluates a game's content and assigns an age rating such as Teen or Mature.
+
+
+## Project 5:  Passenger preferences and the impact of external factors on rides.
+
+A new ride-sharing company Zuber that's launching in Chicago. Our task is to find patterns in the available information. We want to understand passenger preferences and the impact of external factors on rides. We'll study a database, analyze data from competitors, and test a hypothesis about the impact of weather on ride frequency.
