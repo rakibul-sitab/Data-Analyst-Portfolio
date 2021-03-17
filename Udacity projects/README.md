@@ -1,7 +1,6 @@
 # Udacity-Projects:
 This repository is mainly for projects I have done under udacity online platform.
 
-## Project 1: Exploration of market capitalization of different cryptocurrencies
-To better understand the growth and impact of Bitcoin and other cryptocurrencies, a detailed exploration of the market capitalization of different cryptocurrencies have been done.I was provided a dataset from Datacamp which is based on data on cryptocurrencies from 2017. 
-I found out  the big winners cryptocurrencies to invest money through this project.
+## Project 1 : Exploring Weather Trends.
+This project is to create a visualization and prepare a write up describing the similarities and differences between global temperature trends and temperature trends in the closest big city to where i live.I was provided a dataset from udacity I found out Dhaka city is way more hotter comparing to global average through this project.
 
