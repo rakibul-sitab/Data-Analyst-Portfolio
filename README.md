@@ -22,3 +22,13 @@ The online store Ice, which sells video games all over the world. User and exper
 ## Project 5:  Passenger preferences and the impact of external factors on rides.
 
 A new ride-sharing company Zuber that's launching in Chicago. Our task is to find patterns in the available information. We want to understand passenger preferences and the impact of external factors on rides. We'll study a database, analyze data from competitors, and test a hypothesis about the impact of weather on ride frequency.
+
+## Project 6: Advise marketing experts how much money to invest and where
+
+We're working as an analyst in the analytical department at Yandex.Afisha. We want to understand and optimize marketing expenses.
+
+## Project 7: Prioritise hypotheses, launch an A/B test, and analyse the results
+
+We are an analyst at a big online store. Together with the marketing department, we've compiled a list of hypotheses that may help boost revenue.
+
+
