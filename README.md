@@ -31,4 +31,8 @@ We're working as an analyst in the analytical department at Yandex.Afisha. We wa
 
 We are an analyst at a big online store. Together with the marketing department, we've compiled a list of hypotheses that may help boost revenue.
 
+## Project 8: Food market research.
+
+We’ve decided to open a small robot-run cafe in Los Angeles. The project is promising but expensive, so we and our partners decide to try to attract investors. We’re interested in the current market conditions
+
 
