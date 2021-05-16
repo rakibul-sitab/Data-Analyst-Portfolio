@@ -5,4 +5,4 @@ This case study is to analysis for a trial campaign for a company called TaskaBe
 
 ## Case study 2: Analysing customer retention percentage using excel
 
-This case study is to cohort analysis for a retail store.The dataset was collected from kaggle.
+This case study is to analysis retention percentage for a Uk based retail store.The dataset was collected from kaggle.To learn manual excel cohort analysis,this project have been done.
