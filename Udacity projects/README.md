@@ -8,3 +8,6 @@ This project is to create a visualization and prepare a write up describing the 
 We choose the TMDb movie data set for data analysis. This data set contains information about 10,000 movies collected from The Movie Database (TMDb),we would like to find intresting patterns in the dataset.
 
 
+## Project 3 : Understand the results of an A/B test run by an e-commerce website
+The project goal is to work through this notebook to help the company understand if they should implement the new page, keep the old page, or perhaps run the experiment longer to make their decision.The data set have been collected from udacity.
+
