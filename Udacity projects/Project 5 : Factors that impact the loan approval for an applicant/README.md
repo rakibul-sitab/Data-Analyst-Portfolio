@@ -44,11 +44,16 @@ ProsperRating (numeric),ProsperRating (Alpha) , ProsperScore , EmploymentStatus 
 11. Employment status duration: The average amount is 104.5 months.The maximum is 755 months and the minimum is 0.But most of the borrowers took loan whose have employement status 0-50 months.
 12. Loan original amount and monthly loan payment is highly correlated.
 13. Borrower annual percentage rate and prosper score is negatively correlated.
+14. 
 <img src="https://github.com/rakibul-sitab/Data-Analyst-Portfolio/blob/main/Udacity%20projects/Project%205%20:%20Factors%20that%20impact%20the%20loan%20approval%20for%20an%20applicant/images/newplot%20(26).png">
+
 14. For Applicants(employed and fulltime) with prosper ratings from 7 to 4 have the higher loan amount with increased salary.
 15. For Applicants(parttime employee) with prosper ratings from 7 to 4 have the lower loan amount with low level salary.
+
 <img src="https://github.com/rakibul-sitab/Data-Analyst-Portfolio/blob/main/Udacity%20projects/Project%205%20:%20Factors%20that%20impact%20the%20loan%20approval%20for%20an%20applicant/images/newplot%20(27).png">
+
 16. We observe that without homeowner tend to have a higher interest rate, and thus lower rating.However homeowner tends to have lower interest rate and higher rating. So we can safely say that homeowner is safest bet when giving a loan.
+
 <img src="https://github.com/rakibul-sitab/Data-Analyst-Portfolio/blob/main/Udacity%20projects/Project%205%20:%20Factors%20that%20impact%20the%20loan%20approval%20for%20an%20applicant/images/newplot%20(28).png">
 
 To summarize this report, I believe that the loan approval status is heavily influenced by the applicant's details on income range, house owner status, and job status.
