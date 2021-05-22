@@ -1,4 +1,4 @@
-# # ProsperLoan Data Exploration
+# # Factors that impact the loan approval for an applicant
 
 ## Dataset
 
