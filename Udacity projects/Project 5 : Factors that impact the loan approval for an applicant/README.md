@@ -1,4 +1,4 @@
-# # Factors that impact the loan approval for an applicant
+# Factors that impact the loan approval for an applicant
 
 ## Dataset
 
