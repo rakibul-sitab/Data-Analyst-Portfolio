@@ -12,8 +12,9 @@ The project objective is not expected to explore all of the variables in the dat
 ## Summary of Findings
 
 
-•In the loan_data dataset, there have 113937 rows and 24 columns.All the data types are correct.There have missing values in the EstimatedEffectiveYield,BorrowerAPR , •ProsperRating (numeric),ProsperRating (Alpha) , ProsperScore , EmploymentStatus , Occupation ,EmploymentStatusDuration,DebtToIncomeRatio,BorrowerState columns.
-•LoanStatus of all Borrowers are with current and completed state.
+1. In the loan_data dataset, there have 113937 rows and 24 columns.All the data types are correct.There have missing values in the EstimatedEffectiveYield,BorrowerAPR , 
+ProsperRating (numeric),ProsperRating (Alpha) , ProsperScore , EmploymentStatus , Occupation ,EmploymentStatusDuration,DebtToIncomeRatio,BorrowerState columns.
+2. LoanStatus of all Borrowers are with current and completed state.
 •EmploymentStatus of all Borrowers are with Employed State and most of them are full time worker.
 •People having middle middle income(50,000-74,999 USD) and low middle income (25,000-49,999 USD) tool more loans.Job less and low income people have less chance to get loans from bank.
 •Top 5 states of all Borrowers are from CA,NY,TX,FL and IL.
