@@ -58,4 +58,4 @@ ProsperRating (numeric),ProsperRating (Alpha) , ProsperScore , EmploymentStatus 
 
 To summarize this report, I believe that the loan approval status is heavily influenced by the applicant's details on income range, house owner status, and job status.
 
-Github link:
+Github link: https://github.com/rakibul-sitab/Data-Analyst-Portfolio/tree/main/Udacity%20projects/Project%205%20:%20Factors%20that%20impact%20the%20loan%20approval%20for%20an%20applicant
