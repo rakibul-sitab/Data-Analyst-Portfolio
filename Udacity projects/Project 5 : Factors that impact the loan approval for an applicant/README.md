@@ -16,7 +16,7 @@ The project objective is not expected to explore all of the variables in the dat
 ProsperRating (numeric),ProsperRating (Alpha) , ProsperScore , EmploymentStatus , Occupation ,EmploymentStatusDuration,DebtToIncomeRatio,BorrowerState columns.
 2. LoanStatus of all Borrowers are with current and completed state.
 
-<img src="newplot (20).png">
+<img src="https://github.com/rakibul-sitab/Data-Analyst-Portfolio/blob/main/Udacity%20projects/Project%205%20:%20Factors%20that%20impact%20the%20loan%20approval%20for%20an%20applicant/images/newplot%20(20).png">
 
 4. EmploymentStatus of all Borrowers are with Employed State and most of them are full time worker.
 5. People having middle middle income(50,000-74,999 USD) and low middle income (25,000-49,999 USD) tool more loans.Job less and low income people have less chance to get loans from bank.
