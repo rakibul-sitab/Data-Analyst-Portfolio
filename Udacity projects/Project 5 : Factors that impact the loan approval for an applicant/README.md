@@ -44,7 +44,7 @@ ProsperRating (numeric),ProsperRating (Alpha) , ProsperScore , EmploymentStatus 
 11. Employment status duration: The average amount is 104.5 months.The maximum is 755 months and the minimum is 0.But most of the borrowers took loan whose have employement status 0-50 months.
 12. Loan original amount and monthly loan payment is highly correlated.
 13. Borrower annual percentage rate and prosper score is negatively correlated.
-14. 
+ 
 <img src="https://github.com/rakibul-sitab/Data-Analyst-Portfolio/blob/main/Udacity%20projects/Project%205%20:%20Factors%20that%20impact%20the%20loan%20approval%20for%20an%20applicant/images/newplot%20(26).png">
 
 14. For Applicants(employed and fulltime) with prosper ratings from 7 to 4 have the higher loan amount with increased salary.
