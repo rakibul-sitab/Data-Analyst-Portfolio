@@ -11,3 +11,7 @@ We choose the TMDb movie data set for data analysis. This data set contains info
 ## Project 3 : Understand the results of an A/B test run by an e-commerce website
 The project goal is to help the company understand if they should implement the new page, keep the old page, or perhaps run the experiment longer to make their decision.The data set have been collected from udacity.
 
+## Project 4 : Wrangle & Analyze WeRateDogs Data
+
+The purpose of this project is to put into practice what I’ve learned in Data wrangling data course which is part of Udacity Data Analysis Nanodegree program.
+
