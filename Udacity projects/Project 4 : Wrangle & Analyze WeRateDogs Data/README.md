@@ -1,1 +1,1 @@
-Please paste https://nbviewer.jupyter.org/github/rakibul-sitab/Data-Analyst-Portfolio/blob/main/Udacity%20projects/Project%204%20%3A%20Wrangle%20%26%20Analyze%20WeRateDogs%20Data/wrangle_act.ipynb urlto your browser to see the complete code. 
+Please click this link: https://nbviewer.jupyter.org/github/rakibul-sitab/Data-Analyst-Portfolio/blob/main/Udacity%20projects/Project%204%20%3A%20Wrangle%20%26%20Analyze%20WeRateDogs%20Data/wrangle_act.ipynb to see the complete code. 
