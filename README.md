@@ -1,5 +1,5 @@
 # Data-Analyst-Projects:
-This repository is mainly for projects I have done under Practicum100 program by Yandex,udacity nano degree and self learning.
+This repository is mainly for projects I have done under Practicum100 program by Yandex, Udacity data analyst nano degree and self learning.
 
 For a more visually pleasant experience for browsing the portfolio, check out https://rakibulsitab.com/
 
