@@ -37,4 +37,7 @@ We are an analyst at a big online store. Together with the marketing department,
 
 We’ve decided to open a small robot-run cafe in Los Angeles. The project is promising but expensive, so we and our partners decide to try to attract investors. We’re interested in the current market conditions
 
+## Project 9 : Investigate user behaviour for the company's app
+The designers would like to change the fonts for the entire app, but our managers are afraid the users might find the new design intimidating. To make a decision we did an A/A/B test and funnel analysis.
+
 
