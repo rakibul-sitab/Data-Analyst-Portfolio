@@ -1,0 +1,8 @@
+
+1. The data was collected directly from practicum 100 platform.The pipeline.py was provided without the db_config information.
+
+2. The CSV file that contains the data itself is trending_by_time.csv.
+
+3. The data was analyzed and presented into readable charts using Tableau Public, whose link to the dashboard is provided in the Dashboard Link text file.
+
+4. A description of the charts and answer to key questions can be found in the trending_vidoes_on_youtube.pdf
