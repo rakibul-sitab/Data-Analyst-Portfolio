@@ -45,7 +45,8 @@ The designers would like to change the fonts for the entire app, but our manager
 
 ### Project 1 : Analyze customer churn and come up with a customer retention strategy
 
-In order to fight churn, Model Fitness has digitized a number of its customer profiles. Our task is to analyze them and come up with a customer retention strategy using machine learning model.(https://github.com/rakibul-sitab/Data-Analyst-Portfolio/tree/main/Machine%20learning%20projects/Analyze_customer_churn_and_come_up_with_a_customer_retention_strategy)
+In order to fight churn, Model Fitness has digitized a number of its customer profiles. Our task is to analyze them and come up with a customer retention strategy using machine learning model.
+link : https://github.com/rakibul-sitab/Data-Analyst-Portfolio/tree/main/Machine%20learning%20projects/Analyze_customer_churn_and_come_up_with_a_customer_retention_strategy
 
 
 
