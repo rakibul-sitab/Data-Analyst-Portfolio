@@ -15,3 +15,7 @@ The project goal is to help the company understand if they should implement the 
 
 The purpose of this project is to put into practice what I’ve learned in Data wrangling data course which is part of Udacity Data Analysis Nanodegree program.
 
+## Project 5 : Factors that impact the loan approval for an applicant
+
+The purpose of this project is to find the factors or features that could help the loan applicant to get the approval status.
+
