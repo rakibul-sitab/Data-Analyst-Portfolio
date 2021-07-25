@@ -41,7 +41,9 @@ We’ve decided to open a small robot-run cafe in Los Angeles. The project is pr
 
 The designers would like to change the fonts for the entire app, but our managers are afraid the users might find the new design intimidating. To make a decision we did an A/A/B test and funnel analysis.
 
-## Project 10 : Analyze customer churn and come up with a customer retention strategy
+## Machine learing project
+
+### Project 1 : Analyze customer churn and come up with a customer retention strategy
 
 In order to fight churn, Model Fitness has digitized a number of its customer profiles. Our task is to analyze them and come up with a customer retention strategy using machine learning model.
 
