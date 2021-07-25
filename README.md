@@ -1,7 +1,7 @@
 # Data-Analyst-Projects:
 This repository is mainly for projects I have done under Practicum100 program by Yandex,udacity nano degree and self learning.
 
-For a more visually pleasant experience for browsing the portfolio, check out rakibulsitab.com
+For a more visually pleasant experience for browsing the portfolio, check out https://rakibulsitab.com/
 
 Practicum100 is a 9-month intensive program designed to train 100 talents to be successful Data Analysts in Germany.Practicum100 online data analyst program prepares me for a career as a data analyst by helping me collecting and structuring data, forming and testing hypotheses, identifying patterns, and drawing conclusions.I am developing proficiency in Python and its data analysis libraries (Numpy, pandas, Matplotlib) and SQL as I build a portfolio of projects .
 
