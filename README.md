@@ -41,6 +41,18 @@ We’ve decided to open a small robot-run cafe in Los Angeles. The project is pr
 
 The designers would like to change the fonts for the entire app, but our managers are afraid the users might find the new design intimidating. To make a decision we did an A/A/B test and funnel analysis.
 
+## Project 10 : Evaluating_how_the_implementation_of_a_better_recommendation_system_affects_customer_behavior_and_conversion_on_an_international_online_store
+
+The purpose of this project is to determine whether the introduction of an improved recommendation system impacts the behavior and conversion of users on this international online store.
+
+## Project 11 : A query to the PostgreSQL database for a bookstore.
+
+The coronavirus took the entire world by surprise, changing everyone's daily routine. City dwellers no longer spent their free time outside, going to cafes and malls; more people were home, reading books. That attracted the attention of startups that rushed to develop new apps for book lovers. We've been given a database of one of the services competing in this market. It contains data on books, publishers, authors, and customer ratings and reviews of books. This information will be used to generate a value proposition for a new product.
+
+## Project 12 : E-Commerce: Product Range Analysis
+
+Company XYZ have contacted with our data consulting firm.To boost their sales and targeting customers, they are interested to do a product range analysis.They want to see some KPI , such as revenue, average check, and ARPPU.
+
 ## Machine learing project
 
 ### Project 1 : Analyze customer churn and come up with a customer retention strategy
