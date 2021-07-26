@@ -41,7 +41,7 @@ We’ve decided to open a small robot-run cafe in Los Angeles. The project is pr
 
 The designers would like to change the fonts for the entire app, but our managers are afraid the users might find the new design intimidating. To make a decision we did an A/A/B test and funnel analysis.
 
-## Project 10 : Evaluating_how_the_implementation_of_a_better_recommendation_system_affects_customer_behavior_and_conversion_on_an_international_online_store
+## Project 10 : Evaluating how the introduction of an improved recommendation system impacts the behavior and conversion of users on this international online store.
 
 The purpose of this project is to determine whether the introduction of an improved recommendation system impacts the behavior and conversion of users on this international online store.
 
