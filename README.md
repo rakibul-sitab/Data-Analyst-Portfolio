@@ -60,5 +60,8 @@ Company XYZ have contacted with our data consulting firm.To boost their sales an
 In order to fight churn, Model Fitness has digitized a number of its customer profiles. Our task is to analyze them and come up with a customer retention strategy using machine learning model.
 link : https://github.com/rakibul-sitab/Data-Analyst-Portfolio/tree/main/Machine%20learning%20projects/Analyze_customer_churn_and_come_up_with_a_customer_retention_strategy
 
+### Project 2 : Build a best machine learining model to predict the right real estate price for the property owners.
 
+Imagine that we work for a real estate platform. Instead of using real estate agent services, property owners submit their own listings, and buyers can respond to them directly. If a transaction goes through successfully, the platform takes a cut. Website analytics showed that property owners often fail to base their prices on the market value. This practice is always bad for the website: inexpensive items are sold quickly, but the platform's cut is also lower because of this. Overpriced items, on the other hand, are never sold, which means no profit at all. The service needs to prevent sellers from underselling and overpricing. We need to figure out an algorithm to help property owners determine the right price
 
+link: https://github.com/rakibul-sitab/Data-Analyst-Portfolio/blob/main/Machine%20learning%20projects/Build_a_best_machine_learining_model_to_predict_the%20_right%20_real_estate_price%20_for_the_property_owners/Introduction%20to%20machine%20learning.ipynb
