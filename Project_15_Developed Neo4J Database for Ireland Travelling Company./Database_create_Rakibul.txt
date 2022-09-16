@@ -1,0 +1,1200 @@
+
+
+CREATE
+(lim:City {name:"Limerick", province:"Munster", region : "Southern Mid West", distance_from_dublin : 202.7})
+
+CREATE
+(dub:City {name:"Dublin", province:"Leinster", region : "Eastern and Midland"})
+
+
+CREATE
+(gal:City {name:"Galway", province:"Connacht", region : "West Of Ireland"})
+
+ 
+CREATE
+(kilke:City {name:"Kilkenny", province:"Leinster", region : "South East"})
+
+CREATE
+(cork:City {name:"Cork", province:"Munster", region : "Southern", distance_from_dublin : 259})
+
+
+CREATE
+(killa:City {name:"Killarney", province:"Munster", region : "South West", distance_from_dublin : 308.2})
+
+CREATE
+(west:City {name:"Westport", province:"Connacht", region : "South East"})
+
+CREATE
+(tral:City {name:"Tralee", province:"Munster", region : "South West", distance_from_dublin : 298.6})
+
+CREATE
+(slig:City {name:"Sligo", province:"Connacht", region : "West Coast"})
+
+CREATE
+(wat:City {name:"Waterford", province:"Munster", region : "South East", distance_from_dublin : 171.4})
+
+
+
+CREATE
+(lim_tourist_places:Tourist_Places {name:"Limerick Tourist Places"})
+
+CREATE
+(lim_tourist_1:Tourist {name:"King John's Castle",opening_hours:"9.30am-6pm",openning_day:"7days per week"}),
+(lim_tourist_2:Tourist {name:"St. Mary's Cathedral", opening_hours:"11am–4pm",openning_day: "Monday–Saturday"}),
+(lim_tourist_3:Tourist {name:"The Hunt Museum", opening_hours:"10am-5pm",openning_day: "Tuesday–Saturday & Sunday: 11am-5pm"}),
+(lim_tourist_4:Tourist {name:"The People’s Park", opening_hours:"8.00am-8.00pm",openning_day: "7days per week" }),
+(lim_tourist_5:Tourist {name:"Limerick City Gallery of Art" , opening_hours:"10am-5pm",openning_day: "Monday- Saturday & Sunday 12-5pm"})
+
+CREATE
+  (lim)-[:LIMERICK_TOURIST_PLACES]->(lim_tourist_places)
+ 
+
+CREATE
+  (lim_tourist_places)-[:place]->(lim_tourist_1),
+  (lim_tourist_places)-[:place]->(lim_tourist_2),
+  (lim_tourist_places)-[:place]->(lim_tourist_3),
+  (lim_tourist_places)-[:place]->(lim_tourist_4),
+  (lim_tourist_places)-[:place]->(lim_tourist_5)
+
+CREATE
+(lim_hotels:Cities_Hotels {name:"Limerick Hotels"})
+
+CREATE
+(lim_hotel_1:Hotel{name:"Radisson BLU Hotel and Spa",price:109,ratings:8}),
+(lim_hotel_2:Hotel {name:"Limerick Strand Hotel",price:149,ratings:8.7}),
+(lim_hotel_3:Hotel {name:"Clayton Hotel Limerick",price:129,ratings:8.2}),
+(lim_hotel_4:Hotel {name:"Absolute Hotel Limerick",price:139,ratings:8.9}),
+(lim_hotel_5:Hotel {name:"George Limerick Hotel",price:125,ratings:8.5})
+
+CREATE
+  (lim)-[:LIMERICK_HOTELS]->(lim_hotels)
+
+
+CREATE
+  (lim_hotels)-[:hotel]->(lim_hotel_1),
+  (lim_hotels)-[:hotel]->(lim_hotel_2),
+  (lim_hotels)-[:hotel]->(lim_hotel_3),
+  (lim_hotels)-[:hotel]->(lim_hotel_4),
+  (lim_hotels)-[:hotel]->(lim_hotel_5 )
+
+
+
+
+
+
+
+
+
+CREATE
+(Rbhas_review_1:Review {name:"RBHAS_review_1", overall_rating:9.0,comment:"Fabulous leisure facilities make this great value"}),
+(Rbhas_review_2:Review  {name:"RBHAS_review_2", overall_rating:9.0,comment:"Lovely location just outside the city, lovely walks in the nearby Charlie Woods. Very nice leisure centre. Loads to choo"}),
+(Lsh_review_1:Review {name:"LSH_review_1", overall_rating:10.0,comment:"if your visiting Limerick STAY HERE"}),
+(Lsh_review_2:Review_  {name:"LSH_review_2", overall_rating:8.0,comment:"large well equipped room. lovely shower. excellent choice of breakfast menu. high standard evening meal."}),
+(Chl_review_1:Review {name:"CHL_review_1", overall_rating:9.0,comment:"Lovely hotel with great views of the river"}),
+(Chl_review_2:Review_  {name:"CHL_review_2", overall_rating:10.0,comment:"Delightful. Its proximity to the River is a special treat"}),
+(Ahl_review_1:Review {name:"AHL_review_1", overall_rating:10.0,comment:"well run hotel, each staff member were equally excellent."}),
+(Ahl_review_2:Review  {name:"AHL_review_2", overall_rating:10.0,comment:"we were in town for the night to see local sites and go to the Butatty Castle for the Medieval Dinner Banquet"}),
+(Glh_review_1:Review {name:"GLH_review_1", overall_rating:8.0,comment:"Great location, great rooms."}),
+(Glh_review_2:Review  {name:"GLH_review_2", overall_rating:10.0,comment:"My stay at your hotel exceeded all my expectations, from the impeccable dress of your staff , effico"}),
+(Glh_review_3:Review  {name:"GLH_review_3", overall_rating:7.0,comment:"nice interesting and underrated town"}),
+(Glh_review_4:Review  {name:"GLH_review_4", overall_rating:9.0,comment:"comfortable and right in the heart of things."}),
+(Glh_review_5:Review {name:"GLH_review_5", overall_rating:10.0,comment:"Incredible experience from start to finish!!"})
+
+
+CREATE
+  (Rbhas_review_1)-[:review]->(lim_hotel_1),
+  (Rbhas_review_2)-[:review]->(lim_hotel_1)
+
+CREATE
+  (Lsh_review_1)-[:review]->(lim_hotel_2),
+  (Lsh_review_2)-[:review]->(lim_hotel_2)
+
+CREATE
+  (Chl_review_1)-[:review]->(lim_hotel_3),
+  (Chl_review_2)-[:review]->(lim_hotel_3)
+
+CREATE
+  (Ahl_review_1)-[:review]->(lim_hotel_4),
+  (Ahl_review_2)-[:review]->(lim_hotel_4)
+
+CREATE
+  (Glh_review_1)-[:review]->(lim_hotel_5),
+  (Glh_review_2)-[:review]->(lim_hotel_5),
+  (Glh_review_3)-[:review]->(lim_hotel_5),
+  (Glh_review_4)-[:review]->(lim_hotel_5),
+  (Glh_review_5)-[:review]->(lim_hotel_5)
+
+
+
+CREATE
+(lim_transport:Transport {name:"Limerick Transport"})
+
+CREATE
+(dub_transport:Transport {name:"Dublin Transport"})
+
+
+CREATE
+  (lim)-[:limerick_trasport]->(lim_transport)
+
+CREATE
+  (dub)-[:dublin_transport]->(dub_transport)
+
+
+CREATE
+(lim_dub_irish_rail_1:transport {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 28 min", source_station:"Limerick Colbert", departure:15.00, destination_station:"Dublin Heuston", arrival:20.47 })
+
+CREATE
+(lim_dub_irish_rail_2:transport {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 4 min", source_station:"Limerick Colbert", departure:08.52 , destination_station:"Dublin Heuston", arrival:10.59})
+
+CREATE
+(lim_dub_irish_rail_3:transport {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 4 min", source_station:"Limerick Colbert", departure:11.50, destination_station:"Dublin Heuston", arrival:14.06})
+
+CREATE
+(lim_dub_irish_rail_4:transport {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 4 min", source_station:"Limerick Colbert", departure:16.47, destination_station:"Dublin Heuston", arrival:19.06})
+
+CREATE
+(lim_dub_irish_rail_5:transport {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 4 min", source_station:"Limerick Colbert", departure:19.52, destination_station:"Dublin Heuston", arrival:23.03})
+
+
+
+
+CREATE
+(dub_lim_irish_rail_1:transport {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 4 min", source_station:"Dublin Heuston", departure:7.00, destination_station:"Limerick Colbert", arrival:09.04})
+
+CREATE
+(dub_lim_irish_rail_2:transport {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 6 min", source_station:"Dublin Heuston", departure:9.00, destination_station:"Limerick Colbert", arrival:11.06 })
+
+CREATE
+(dub_lim_irish_rail_3:transport {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 3 min", source_station:"Dublin Heuston", departure:12.00 , destination_station:"Limerick Colbert", arrival:14.03 })
+
+CREATE
+(dub_lim_irish_rail_4:transport {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 12 min", source_station:"Dublin Heuston", departure:16.00 , destination_station:"Limerick Colbert", arrival:18.12 })
+
+CREATE
+(dub_lim_irish_rail_5:transport {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 18 min", source_station:"Dublin Heuston", departure:21.00, destination_station:"Limerick Colbert", arrival:23.18 })
+
+
+
+CREATE
+  (lim_transport)-[:transport_from]->(lim_dub_irish_rail_1)-[:transport_to]->(dub_transport)
+
+CREATE
+  (lim_transport)-[:transport_from]->(lim_dub_irish_rail_2)-[:transport_to]->(dub_transport)
+
+CREATE
+  (lim_transport)-[:transport_from]->(lim_dub_irish_rail_3)-[:transport_to]->(dub_transport)
+
+CREATE
+  (lim_transport)-[:transport_from]->(lim_dub_irish_rail_4)-[:transport_to]->(dub_transport)
+
+CREATE
+  (lim_transport)-[:transport_from]->(lim_dub_irish_rail_5)-[:transport_to]->(dub_transport)
+
+
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_lim_irish_rail_1)-[:transport_to]->(lim_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_lim_irish_rail_2)-[:transport_to]->(lim_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_lim_irish_rail_3)-[:transport_to]->(lim_transport)
+CREATE
+  (dub_transport)-[:transport_from]->(dub_lim_irish_rail_4)-[:transport_to]->(lim_transport)
+CREATE
+  (dub_transport)-[:transport_from]->(dub_lim_irish_rail_5)-[:transport_to]->(lim_transport)
+
+
+
+CREATE
+(dub_lim_bus_1:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"2 hr 45 min", source_station:"Dublin City South, Burgh Quay", departure:7.15 , destination_station:"Arthur's Quay", arrival:10.00})
+CREATE
+(dub_lim_bus_2:transport  {name:"By_Bus",carrier:"City Link", duration:"2 hr 30 min", source_station:"Dublin airport", departure:9.45, destination_station:"Arthur's Quay", arrival:12.30 })
+CREATE
+(dub_lim_bus_3:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"2 hr 45 min", source_station:"Dublin City South, Burgh Quay", departure:11.45 , destination_station:"Arthur's Quay", arrival:14.30 })
+CREATE
+(dub_lim_bus_4:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"2 hr 30 min", source_station:"Dublin airport", departure:16.00 , destination_station:"Arthur's Quay", arrival:18.00 })
+CREATE
+(dub_lim_bus_5:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"2 hr 45 min", source_station:"Dublin City South, Burgh Quay", departure:20.15 , destination_station:"Arthur's Quay", arrival:23.00})
+
+
+
+
+
+
+CREATE
+(lim_dub_bus_1:transport {name:"By_Bus",carrier:"Dublin Coach", duration:"2 hr 45 min", source_station:"Arthur's Quay", departure:07.15 , destination_station:"Bachelors Walk, stop 7622", arrival:10.00})
+CREATE
+(lim_dub_bus_2:transport {name:"By_Bus",carrier:"City Link", duration:"2 hr 30 min", source_station:"Arthur's Quay", departure:09.30 , destination_station:"Dublin Airport", arrival:12.00 })
+CREATE
+(lim_dub_bus_3:transport {name:"By_Bus",carrier:"Dublin Coach", duration:"2 hr 45 min", source_station:"Arthur's Quay", departure:14.15, destination_station:"Bachelors Walk, stop 7622", arrival:17.00})
+CREATE
+(lim_dub_bus_4:transport {name:"By_Bus",carrier:"Dublin Coach", duration:"2 hr 45 min", source_station:"Arthur's Quay", departure:19.15, destination_station:"Bachelors Walk, stop 7622", arrival:22.00 })
+CREATE
+(lim_dub_bus_5:transport {name:"By_Bus",carrier:"City Link", duration:"2 hr 30 min", source_station:"Arthur's Quay", departure:19.30, destination_station:"Dublin Airport", arrival:22.00})
+
+
+
+
+
+
+CREATE
+  (lim_transport)-[:transport_from]->(lim_dub_bus_1)-[:transport_to]->(dub_transport)
+
+CREATE
+  (lim_transport)-[:transport_from]->(lim_dub_bus_2)-[:transport_to]->(dub_transport)
+CREATE
+  (lim_transport)-[:transport_from]->(lim_dub_bus_3)-[:transport_to]->(dub_transport)
+CREATE
+  (lim_transport)-[:transport_from]->(lim_dub_bus_4)-[:transport_to]->(dub_transport)
+CREATE
+  (lim_transport)-[:transport_from]->(lim_dub_bus_5)-[:transport_to]->(dub_transport)
+
+
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_lim_bus_1)-[:transport_to]->(lim_transport)
+CREATE
+  (dub_transport)-[:transport_from]->(dub_lim_bus_2)-[:transport_to]->(lim_transport)
+CREATE
+  (dub_transport)-[:transport_from]->(dub_lim_bus_3)-[:transport_to]->(lim_transport)
+CREATE
+  (dub_transport)-[:transport_from]->(dub_lim_bus_4)-[:transport_to]->(lim_transport)
+CREATE
+  (dub_transport)-[:transport_from]->(dub_lim_bus_5)-[:transport_to]->(lim_transport)
+
+
+
+
+
+CREATE
+(dub_tourist_places:Tourist_Places {name:"Dublin Tourist Places"})
+
+CREATE
+(dub_tourist_1:Tourist {name:"The Book of Kells at Trinity College"}),
+(dub_tourist_2:Tourist {name:"The Guinness Storehouse"}),
+(dub_tourist_3:Tourist {name:"National Botanic Gardens"}),
+(dub_tourist_4:Tourist {name:"St. Patrick’s Cathedral"}),
+(dub_tourist_5:Tourist {name:"Dublin Castle"})
+
+CREATE
+  (dub)-[:DUBLIN_TOURIST_PLACES]->(dub_tourist_places)
+
+CREATE
+  (dub_tourist_places)-[:place]->(dub_tourist_1),
+  (dub_tourist_places)-[:place]->(dub_tourist_2),
+  (dub_tourist_places)-[:place]->(dub_tourist_3),
+  (dub_tourist_places)-[:place]->(dub_tourist_4),
+  (dub_tourist_places)-[:place]->(dub_tourist_5)
+
+
+CREATE
+(dub_hotels:Cities_Hotels {name:"Dublin Hotels"})
+
+CREATE
+(dub_hotel_1:Hotel {name:"Riu Plaza The Gresham Dublin",price:199,ratings:8.3}),
+(dub_hotel_2:Hotel {name:"Clayton Hotel Cardiff Lane",price:179,ratings:7.9}),
+(dub_hotel_3:Hotel {name:"Marlin Hotel Stephens Green",price:159,ratings:8.5}),
+(dub_hotel_4:Hotel {name:"Maldron Hotel Parnell Square",price:169,ratings:8.5}),
+(dub_hotel_5:Hotel {name:"Beresford Hotel",price:125.10,ratings:7.4})
+
+CREATE
+  (dub)-[:DUBLIN_HOTELS]->(dub_hotels)
+
+
+CREATE
+  (dub_hotels)-[:hotel]->(dub_hotel_1),
+  (dub_hotels)-[:hotel]->(dub_hotel_2),
+  (dub_hotels)-[:hotel]->(dub_hotel_3),
+  (dub_hotels)-[:hotel]->(dub_hotel_4),
+  (dub_hotels)-[:hotel]->(dub_hotel_5 )
+
+
+CREATE
+(Rptgb_review_1:Review {name:"RPTGB_review_1", overall_rating:9.0,comment:"Excellent and will definitely return"}),
+(Rptgb_review_2:Review  {name:"RPTGB_review_2", overall_rating:8.0,comment:"Really enjoyed my visit and would stay again, no problem."}),
+(Chcl_review_1:Review {name:"CHCL_review_1", overall_rating:8.0,comment:"Little bit of luxury."}),
+(Chcl_review_2:Review  {name:"CHCL_review_2", overall_rating:9.0,comment:"overall great stay great location and good value for money"}),
+(Mhsg_review_1:Review {name:"MHSG_review_1",  overall_rating:10.0,comment:"Excellent experience, great room, beautiful hotel. Will be visiting again"}),
+(Mhsg_review_2:Review  {name:"MHSG_review_2", overall_rating:10.0,comment:"Delightful. Its proximity to the River is a special treat"}),
+(Mhps_review_1:Review {name:"MHPS_review_1", overall_rating:10.0,comment:"Very enjoyable Nice walk to centre and temple bar area Staff very helpful"}),
+(Mhps_review_2:Review  {name:"MHPS_review_2", overall_rating:8.0,comment:"Family suite large enough to fit my family of 5"}),
+(Bh_review_1:Review {name:"BH_review_1", overall_rating:8.0,comment:"staff were excellent informative & very friendly made our check in/out very easy"}),
+(Bh_review_2:Review  {name:"BH_review_2", overall_rating:8.0,comment:"Family suite large enough to fit my family of 5"})
+
+
+CREATE
+  (Rptgb_review_1)-[:review]->(dub_hotel_1),
+  (Rptgb_review_2)-[:review]->(dub_hotel_1)
+
+CREATE
+  (Chcl_review_1)-[:review]->(dub_hotel_2),
+  (Chcl_review_2)-[:review]->(dub_hotel_2)
+
+CREATE
+  (Mhsg_review_1)-[:review]->(dub_hotel_3),
+  (Mhsg_review_2)-[:review]->(dub_hotel_3)
+
+CREATE
+  (Mhps_review_1)-[:review]->(dub_hotel_4),
+  (Mhps_review_2)-[:review]->(dub_hotel_4)
+
+CREATE
+  (Bh_review_1)-[:review]->(dub_hotel_5),
+  (Bh_review_2)-[:review]->(dub_hotel_5)
+
+
+CREATE
+(gal_tourist_places:Tourist_Places {name:"Galway Tourist Places"})
+
+CREATE
+(gal_tourist_1:Tourist {name:"Eyre Square"}),
+(gal_tourist_2:Tourist {name:"Tour the Wild Atlantic Way"}),
+(gal_tourist_3:Tourist {name:"St. Nicholas' Church"}),
+(gal_tourist_4:Tourist {name:"Galway Cathedral"}),
+(gal_tourist_5:Tourist {name:"Menlo Castle"})
+
+CREATE
+  (gal)-[:GALWAY_TOURIST_PLACES]->(gal_tourist_places)
+
+
+CREATE
+  (gal_tourist_places)-[:place]->(gal_tourist_1),
+  (gal_tourist_places)-[:place]->(gal_tourist_2),
+  (gal_tourist_places)-[:place]->(gal_tourist_3),
+  (gal_tourist_places)-[:place]->(gal_tourist_4),
+  (gal_tourist_places)-[:place]->(gal_tourist_5)
+
+
+
+CREATE
+(gal_hotels:Cities_Hotels {name:"Galway Hotels"})
+
+CREATE
+(gal_hotel_1:Hotel {name:"Holiday Hotel",price:120,ratings:7.4}),
+(gal_hotel_2:Hotel {name:"Flannery's Hotel",price:140,ratings:8.2}),
+(gal_hotel_3:Hotel {name:"Maldron Hotel Sandy Road Galway",price:159,ratings:8.2})
+
+
+CREATE
+  (gal)-[:GALWAY_HOTELS]->(gal_hotels)
+
+
+CREATE
+  (gal_hotels)-[:hotel]->(gal_hotel_1),
+  (gal_hotels)-[:hotel]->(gal_hotel_2),
+  (gal_hotels)-[:hotel]->(gal_hotel_3)
+
+CREATE
+(Hh_review_1:Review {name:"HH_review_1",  overall_rating:10.0,comment:"Amazing value and location"}),
+(Hh_review_2:Review  {name:"HH_review_2", overall_rating:8.0,comment:"great value, right in the heart of salthill you couldn’t have a better location. plenty of shops, restaurants and takeaw"}),
+(Fh_review_1:Review {name:"FH_review_1", overall_rating:10.0,comment:"we will use this hotel again as a base when visiting Galway."}),
+(Fh_review_2:Review  {name:"FH_review_2", overall_rating:7.0,comment:"Meets expectations with a great and friendly staff"}),
+(Mhsrg_review_1:Review {name:"MHSRG_review_1",  overall_rating:8.0,comment:"Nice, friendly staff, beautiful hotel"}),
+(Mhsrg_review_2:Review  {name:"MHSRG_review_2", overall_rating:8.0,comment:"Would stay here again when in Galway."})
+
+
+CREATE
+  (Hh_review_1)-[:review]->(gal_hotel_1),
+  (Hh_review_2)-[:review]->(gal_hotel_1)
+
+CREATE
+  (Fh_review_1)-[:review]->(gal_hotel_2),
+  (Fh_review_2)-[:review]->(gal_hotel_2)
+
+CREATE
+  (Mhsrg_review_1)-[:review]->(gal_hotel_3),
+  (Mhsrg_review_2)-[:review]->(gal_hotel_3)
+
+
+
+CREATE
+(gal_transport:Transport {name:"Galway Transport"})
+
+
+CREATE
+  (gal)-[:GALWAY_TRANSPORT]->(gal_transport)
+
+
+
+CREATE
+(gal_dub_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 35 min", source_station:"Galway(ceannt)", departure:15.05, destination_station:"Dublin Heuston", arrival:17.40})
+
+CREATE
+(dub_gal_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 20", source_station:"Dublin Heuston", departure:13.25, destination_station:"Galway(ceannt)", arrival:15.45 })
+
+CREATE
+  (gal_transport)-[:transport_from]->(gal_dub_irish_rail)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_gal_irish_rail)-[:transport_to]->(gal_transport)
+
+
+
+
+CREATE
+(gal_dub_bus:transport  {name:"By_Bus",carrier:"City Link", duration:"2 hr 30 min", source_station:"Galway Coach Stn", departure:16.15, destination_station:"Aston Quay", arrival:18.45 })
+
+CREATE
+(dub_gal_bus:transport  {name:"By_Bus",carrier:"City Link", duration:"2 hr 30 min", source_station:"Aston Quay", departure:15.45, destination_station:"Galway Coach Stn", arrival:18.15})
+
+CREATE
+  (gal_transport)-[:transport_from]->(gal_dub_bus)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_gal_bus)-[:transport_to]->(gal_transport)
+
+
+
+CREATE
+(kilke_tourist_places:Tourist_Places {name:"Kilkenny Tourist Places"})
+
+CREATE
+(kilke_tourist_1:Tourist {name:"Kilkenny Castle"}),
+(kilke_tourist_2:Tourist {name:"National Design & Craft Gallery and Kilkenny Design Centre"}),
+(kilke_tourist_3:Tourist {name:"Saint Mary's Cathedral"}),
+(kilke_tourist_4:Tourist {name:"Medieval Mile Museum"}),
+(kilke_tourist_5:Tourist {name:"Rothe House and Gardens"})
+
+CREATE
+  (kilke)-[:Kilkenny_TOURIST_PLACES]->(kilke_tourist_places)
+
+
+CREATE
+  (kilke_tourist_places)-[:place]->(kilke_tourist_1),
+  (kilke_tourist_places)-[:place]->(kilke_tourist_2),
+  (kilke_tourist_places)-[:place]->(kilke_tourist_3),
+  (kilke_tourist_places)-[:place]->(kilke_tourist_4),
+  (kilke_tourist_places)-[:place]->(kilke_tourist_5)
+
+
+
+CREATE
+(kilke_hotels:Cities_Hotels {name:"Kilkenny Hotels"})
+
+CREATE
+(kilke_hotel_1:Hotel {name:"Club House Hotel Kilkenny",price:140,ratings:7.5}),
+(kilke_hotel_2:Hotel {name:"The Hoban Hotel Kilkenny",price:149,ratings:8.3}),
+(kilke_hotel_3:Hotel {name:"Kilkenny Inn",price:129,ratings:8})
+
+
+CREATE
+  (kilke)-[:KILKENNY_HOTELS]->(kilke_hotels)
+
+
+CREATE
+  (kilke_hotels)-[:hotel]->(kilke_hotel_1),
+  (kilke_hotels)-[:hotel]->(kilke_hotel_2),
+  (kilke_hotels)-[:hotel]->(kilke_hotel_3)
+
+CREATE
+(Chhk_review_1:Review {name:"CHHK_review_1",  overall_rating:9.0,comment:"location perfect nothing fancy but ideal hotel"}),
+(Chhk_review_2:Review  {name:"CHHK_review_2", overall_rating:9.0,comment:"Enjoyable stay in a charming, friendly traditionally Irish hotel."}),
+(Thhk_review_1:Review {name:"THHK_review_1", overall_rating:10.0,comment:"Class hotel,room, bar an staff were great"}),
+(Thhk_review_2:Review  {name:"THHK_review_2", overall_rating:8.0,comment:"Nice hotel for a stopover"}),
+(Ki_review_1:Review {name:"KI_review_1",  overall_rating:8.0,comment:"Good value great location"}),
+(Ki_review_2:Review  {name:"KI_review_2", overall_rating:7.0,comment:"good budget hotel close to the centre."})
+
+
+CREATE
+  (Chhk_review_1)-[:review]->(kilke_hotel_1),
+  (Chhk_review_2)-[:review]->(kilke_hotel_1)
+
+CREATE
+  (Thhk_review_1)-[:review]->(kilke_hotel_2),
+  (Thhk_review_2)-[:review]->(kilke_hotel_2)
+
+CREATE
+  (Ki_review_1)-[:review]->(kilke_hotel_3),
+  (Ki_review_2)-[:review]->(kilke_hotel_3)
+
+
+
+CREATE
+(kilke_transport:Transport {name:"Kilkenny Transport"})
+
+
+CREATE
+  (kilke)-[:KILKENNY_TRANSPORT]->(kilke_transport)
+
+
+
+CREATE
+(kilke_dub_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"1 hr 42 min", source_station:"Kilkenny (MacDonagh)", departure:15.30 , destination_station:"Dublin Heuston", arrival:17.12})
+
+CREATE
+(dub_kilke_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"1 hr 44 min", source_station:"Dublin Heuston", departure:16.40, destination_station:"Kilkenny (MacDonagh)", arrival:18.24})
+
+CREATE
+  (kilke_transport)-[:transport_from]->(kilke_dub_irish_rail)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_kilke_irish_rail)-[:transport_to]->(kilke_transport)
+
+
+
+
+CREATE
+(kilke_dub_bus:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"1 hr 40 min", source_station:"MacDonagh Junction Shopping Center", departure:15.45, destination_station:"Dublin City South, Burgh Quay, stop 339", arrival:17.25})
+
+CREATE
+(dub_kilke_bus:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"1 hr 40 min", source_station:"Dublin City South, Burgh Quay, stop 339", departure:16.40, destination_station:"MacDonagh Junction Shopping Center", arrival:17.43})
+
+CREATE
+  (kilke_transport)-[:transport_from]->(kilke_dub_bus)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_kilke_bus)-[:transport_to]->(kilke_transport)
+
+
+
+
+
+
+
+
+
+
+
+CREATE
+(cork_tourist_places:Tourist_Places {name:"Cork Tourist Places"})
+
+CREATE
+(cork_tourist_1:Tourist {name:"The English Market"}),
+(cork_tourist_2:Tourist {name:"St. Patrick's Street"}),
+(cork_tourist_3:Tourist {name:"St. Fin Barre's Cathedral"}),
+(cork_tourist_4:Tourist {name:"Fitzgerald Park and Cork Public Museum"}),
+(cork_tourist_5:Tourist {name:"Shandon Bells, St. Anne's Church"})
+
+CREATE
+  (cork)-[:CORK_TOURIST_PLACES]->(cork_tourist_places)
+
+
+CREATE
+  (cork_tourist_places)-[:place]->(cork_tourist_1),
+  (cork_tourist_places)-[:place]->(cork_tourist_2),
+  (cork_tourist_places)-[:place]->(cork_tourist_3),
+  (cork_tourist_places)-[:place]->(cork_tourist_4),
+  (cork_tourist_places)-[:place]->(cork_tourist_5)
+
+
+
+CREATE
+(cork_hotels:Cities_Hotels {name:"Cork Hotels"})
+
+CREATE
+(cork_hotel_1:Hotel {name:"Maldron Hotel South Mall Cork City",price:159,ratings:8.6}),
+(cork_hotel_2:Hotel {name:"Jurys Inn Cork",price:155,ratings:8.0}),
+(cork_hotel_3:Hotel {name:"Hotel Isaacs Cork City",price:149,ratings:8.5})
+
+
+CREATE
+  (cork)-[:CORK_HOTELS]->(cork_hotels)
+
+
+CREATE
+  (cork_hotels)-[:hotel]->(cork_hotel_1),
+  (cork_hotels)-[:hotel]->(cork_hotel_2),
+  (cork_hotels)-[:hotel]->(cork_hotel_3)
+
+CREATE
+(Mhsmcc_review_1:Review {name:"MHSMCC_review_1",  overall_rating:10.0,comment:"Enjoyable weekend stay in Maldron Cork!"}),
+(Mhsmcc_review_2:Review  {name:"MHSMCC_review_2", overall_rating:8.0,comment:"Enjoyable and comfortable great location.Sun was out in Cork which is a rarity when I am there."}),
+(Jic_review_1:Review {name:"JIC_review_1", overall_rating:9.0,comment:"A quiet refuge just outside the heart of the big city"}),
+(Jic_review_2:Review  {name:"JIC_review_2", overall_rating:8.0,comment:"Worth the money, mostly enjoyed my stay"}),
+(Hicc_review_1:Review {name:"HICC_review_1",  overall_rating:9.0,comment:"This hotel comes highly recommended for a short stay. Excellent facilities at a reasonable price."}),
+(Hicc_review_2:Review  {name:"HICC_review_2", overall_rating:10.0,comment:"Everything we could want on a vacation"})
+
+
+CREATE
+  (Mhsmcc_review_1)-[:review]->(cork_hotel_1),
+  (Mhsmcc_review_2)-[:review]->(cork_hotel_1)
+
+CREATE
+  (Jic_review_1)-[:review]->(cork_hotel_2),
+  (Jic_review_2)-[:review]->(cork_hotel_2)
+
+CREATE
+  (Hicc_review_1)-[:review]->(cork_hotel_3),
+  (Hicc_review_2)-[:review]->(cork_hotel_3)
+
+
+
+CREATE
+(cork_transport:Transport {name:"Cork Transport"})
+
+
+CREATE
+  (cork)-[:CORK_TRANSPORT]->(cork_transport)
+
+
+
+CREATE
+(cork_dub_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 41 min", source_station:"Cork(Kent)", departure:16.25, destination_station:"Dublin Heuston", arrival:19.06})
+
+CREATE
+(dub_cork_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 37 min", source_station:"Dublin Heuston", departure:16.00, destination_station:"Cork(Kent)", arrival:18.37})
+
+CREATE
+  (cork_transport)-[:transport_from]->(cork_dub_irish_rail)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_cork_irish_rail)-[:transport_to]->(cork_transport)
+
+
+
+
+CREATE
+(cork_dub_bus:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"4 hr 20 min", source_station:"Cork, Anderson's Quay", departure:15.05, destination_station:"Dublin City South, Burgh Quay, stop 339", arrival:19.30})
+
+CREATE
+(dub_cork_bus:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"4 hr 15 min", source_station:"Dublin City South, Burgh Quay, stop 339", departure:16.00, destination_station:"Cork, Anderson's Quay", arrival:20.25})
+
+CREATE
+  (cork_transport)-[:transport_from]->(cork_dub_bus)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_cork_bus)-[:transport_to]->(cork_transport)
+
+
+
+
+
+
+
+
+CREATE
+(killa_tourist_places:Tourist_Places {name:"Killarney Tourist Places"})
+
+CREATE
+(killa_tourist_1:Tourist {name:"Killarney National Park"}),
+(killa_tourist_2:Tourist {name:"Ring of Kerry"}),
+(killa_tourist_3:Tourist {name:"Muckross House Gardens & Traditional Farms"}),
+(killa_tourist_4:Tourist {name:"Dinis Cottage and Island"}),
+(killa_tourist_5:Tourist {name:"Muckross Abbey"})
+
+CREATE
+  (killa)-[:Killarney_TOURIST_PLACES]->(killa_tourist_places)
+
+
+CREATE
+  (killa_tourist_places)-[:KILLA_PLACE_1]->(killa_tourist_1),
+  (killa_tourist_places)-[:KILLA_PLACE_2]->(killa_tourist_2),
+  (killa_tourist_places)-[:KILLA_PLACE_3]->(killa_tourist_3),
+  (killa_tourist_places)-[:KILLA_PLACE_4]->(killa_tourist_4),
+  (killa_tourist_places)-[:KILLA_PLACE_5]->(killa_tourist_5)
+
+
+
+CREATE
+(killa_hotels:Cities_Hotels {name:"Killarney Hotels"})
+
+CREATE
+(killa_hotel_1:Hotel {name:"McSweeney Arms Hotel",price:150,ratings:8.9}),
+(killa_hotel_2:Hotel {name:"Killarney Oaks Hotel",price:169,ratings:8.3}),
+(killa_hotel_3:Hotel {name:"Killarney Dromhall Hotel",price:179,ratings:8.8})
+
+
+CREATE
+  (killa)-[:KILLARNEY_HOTELS]->(killa_hotels)
+
+
+CREATE
+  (killa_hotels)-[:hotel]->(killa_hotel_1),
+  (killa_hotels)-[:hotel]->(killa_hotel_2),
+  (killa_hotels)-[:hotel]->(killa_hotel_3)
+
+CREATE
+(Mah_review_1:Review {name:"MAH_review_1",  overall_rating:8.0,comment:"Fabulous location, food , and spotless"}),
+(Mah_review_2:Review  {name:"MAH_review_2", overall_rating:8.0,comment:"Excellent value, very centrally located, close to very affordable parking."}),
+(Koh_review_1:Review {name:"KOH_review_1", overall_rating:9.0,comment:"Realaxing, friendly atmosphere. We would definatly stay there agian."}),
+(Koh_review_2:Review  {name:"KOH_review_2", overall_rating:8.0,comment:"Convenient and affordable hotel in a beautiful location"}),
+(Kdh_review_1:Review {name:"KDH_review_1",  overall_rating:10.0,comment:"This is our second stay. And we recommend it to everyone planning a trip to kilarney."}),
+(Kdh_review_2:Review  {name:"KDH_review_2", overall_rating:9.0,comment:"Lovely hotel and great staff. Would stay here again!"})
+
+
+CREATE
+  (Mah_review_1)-[:review]->(killa_hotel_1),
+  (Mah_review_2)-[:review]->(killa_hotel_1)
+
+CREATE
+  (Koh_review_1)-[:review]->(killa_hotel_2),
+  (Koh_review_2)-[:review]->(killa_hotel_2)
+
+CREATE
+  (Kdh_review_1)-[:review]->(killa_hotel_3),
+  (Kdh_review_2)-[:review]->(killa_hotel_3)
+
+
+
+CREATE
+(killa_transport:Transport {name:"Killarney Transport"})
+
+
+CREATE
+  (killa)-[:KILLARNEY_TRANSPORT]->(killa_transport)
+
+
+
+CREATE
+(killa_dub_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"3 hr 16 min", source_station:"Killarney", departure:17.41, destination_station:"Dublin Heuston", arrival:21.06})
+
+CREATE
+(dub_killa_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"2 hr 7 min", source_station:"Dublin Heuston", departure:15.00, destination_station:"Killarney", arrival:18.19 })
+
+CREATE
+  (killa_transport)-[:transport_from]->(killa_dub_irish_rail)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_killa_irish_rail)-[:transport_to]->(killa_transport)
+
+
+
+
+CREATE
+(killa_dub_bus:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"4 hr 30 min", source_station:"Killarney, Mission Road", departure:18.30, destination_station:"Bachelors Walk, stop 7622", arrival:23.05})
+
+CREATE
+(dub_killa_bus:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"4 hr 20 min", source_station:"Bachelors Walk, stop 7622", departure:17.15, destination_station:"Killarney, Mission Road", arrival:21.42 })
+
+CREATE
+  (killa_transport)-[:transport_from]->(killa_dub_bus)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_killa_bus)-[:transport_to]->(killa_transport)
+
+
+
+
+
+
+
+
+
+
+
+CREATE
+(west_tourist_places:Tourist_Places {name:"Westport Tourist Places"})
+
+CREATE
+(west_tourist_1:Tourist {name:"Westport House"}),
+(west_tourist_2:Tourist {name:"Clew Bay’s Beaches"}),
+(west_tourist_3:Tourist {name:"Western Greenway Trail"}),
+(west_tourist_4:Tourist {name:"Climb Croagh Patrick"}),
+(west_tourist_5:Tourist {name:"Achill Island"})
+
+CREATE
+  (west)-[:WESTPORT_TOURIST_PLACES]->(west_tourist_places)
+
+
+CREATE
+  (west_tourist_places)-[:place]->(west_tourist_1),
+  (west_tourist_places)-[:place]->(west_tourist_2),
+  (west_tourist_places)-[:place]->(west_tourist_3),
+  (west_tourist_places)-[:place]->(west_tourist_4),
+  (west_tourist_places)-[:place]->(west_tourist_5)
+
+
+
+CREATE
+(west_hotels:Cities_Hotels {name:"Westport Hotels"})
+
+CREATE
+(west_hotel_1:Hotel {name:"Westport Heights",price:100,ratings:9.2}),
+(west_hotel_2:Hotel {name:"Westport Country Lodge Hotel",price:123,ratings:8.4}),
+(west_hotel_3:Hotel {name:"Mocha Beans Westport",price:99,ratings:9.5})
+
+
+CREATE
+  (west)-[:WESTPORT_HOTELS]->(west_hotels)
+
+
+CREATE
+  (west_hotels)-[:hotel]->(west_hotel_1),
+  (west_hotels)-[:hotel]->(west_hotel_2),
+  (west_hotels)-[:hotel]->(west_hotel_3)
+
+CREATE
+(Wh_review_1:Review {name:"WH_review_1",  overall_rating:10.0,comment:"The owner was outstanding so helpful and a genuinely lovely women"}),
+(Wh_review_2:Review  {name:"WH_review_2", overall_rating:10.0,comment:"Outanding B&B! Highly recommend staying here whenever you visit Westport"}),
+(Wclh_review_1:Review {name:"WCLH_review_1", overall_rating:9.0,comment:"Great spot to unwind after climbing ‘The Reek"}),
+(Wclh_review_2:Review  {name:"WCLH_review_2", overall_rating:8.0,comment:"Enjoyed the short stay (1 night) at Westport Country Hotel & easy access to Westport town."}),
+(Mbw_review_1:Review {name:"MBW_review_1",  overall_rating:7.0,comment:"Very good value, great location, basic but clean and comfortable."}),
+(Mbw_review_2:Review  {name:"MBW_review_2", overall_rating:7.0,comment:"budget friendly, central location"})
+
+
+CREATE
+  (Wh_review_1)-[:review]->(west_hotel_1),
+  (Wh_review_2)-[:review]->(west_hotel_1)
+
+CREATE
+  (Wclh_review_1)-[:review]->(west_hotel_2),
+  (Wclh_review_2)-[:review]->(west_hotel_2)
+
+CREATE
+  (Mbw_review_1)-[:review]->(west_hotel_3),
+  (Mbw_review_2)-[:review]->(west_hotel_3)
+
+
+
+CREATE
+(west_transport:Transport {name:"Westport Transport"})
+
+
+CREATE
+  (west)-[:WESTPORT_TRANSPORT]->(west_transport)
+
+
+
+CREATE
+(west_dub_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"3 hr 16 min", source_station:"Westport", departure:18.20, destination_station:"Dublin Heuston", arrival:21.36})
+
+CREATE
+(dub_west_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"3 hr 51 min", source_station:"Dublin Heuston", departure:17.10, destination_station:"Westport", arrival:21.01})
+
+CREATE
+  (west_transport)-[:transport_from]->(west_dub_irish_rail)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_west_irish_rail)-[:transport_to]->(west_transport)
+
+
+
+
+CREATE
+(west_dub_bus:transport  {name:"By_Bus",carrier:"City Link", duration:"2 hr 30 min", source_station:"Galway Coach Stn", departure:17.15, destination_station:"Dublin (Batchelors Walk)", arrival:19.45})
+
+CREATE
+(dub_west_bus:transport  {name:"By_Bus",carrier:"City Link", duration:"2 hr 30 min", source_station:"Dublin City South, Burgh Quay, stop 339", departure:15.15, destination_station:"Galway Coach Stn", arrival:17.45 })
+
+CREATE
+  (west_transport)-[:transport_from]->(west_dub_bus)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_west_bus)-[:transport_to]->(west_transport)
+
+
+
+CREATE
+(tral_tourist_places:Tourist_Places {name:"Tralee Tourist Places"})
+
+CREATE
+(tral_tourist_1:Tourist {name:"Tralee Bay Wetlands Centre"}),
+(tral_tourist_2:Tourist{name:"Tralee Town Park"}),
+(tral_tourist_3:Tourist {name:"Ardfert Cathedral"}),
+(tral_tourist_4:Tourist {name:"Banna Strand"}),
+(tral_tourist_5:Tourist {name:"Mish Mountains"})
+
+CREATE
+  (tral)-[:TRALEE_TOURIST_PLACES]->(tral_tourist_places)
+
+
+CREATE
+  (tral_tourist_places)-[:place]->(tral_tourist_1),
+  (tral_tourist_places)-[:place]->(tral_tourist_2),
+  (tral_tourist_places)-[:place]->(tral_tourist_3),
+  (tral_tourist_places)-[:place]->(tral_tourist_4),
+  (tral_tourist_places)-[:place]->(tral_tourist_5)
+
+
+
+CREATE
+(tral_hotels:Cities_Hotels {name:"Tralee Hotels"})
+
+CREATE
+(tral_hotel_1:Hotel {name:"The Ashe Hotel",price:160,ratings:9.0}),
+(tral_hotel_2:Hotel {name:"The Rose Hotel",price:175,ratings:8.8}),
+(tral_hotel_3:Hotel {name:"River Island Hotel",price:90,ratings:8.2})
+
+
+CREATE
+  (tral)-[:TRALEE_HOTELS]->(tral_hotels)
+
+
+CREATE
+  (tral_hotels)-[:hotel]->(tral_hotel_1),
+  (tral_hotels)-[:hotel]->(tral_hotel_2),
+  (tral_hotels)-[:hotel]->(tral_hotel_3)
+
+CREATE
+(Tah_review_1:Review {name:"TAH_review_1",  overall_rating:10.0,comment:"have stayed here Twice has a great atmosphere the decor is fab friendly and helpful staff breakfast was lovely the room"}),
+(Tah_review_2:Review  {name:"TAH_review_2", overall_rating:9.0,comment:"A friendly and comfortable hotel, very convenient to town centre."}),
+(Trh_review_1:Review {name:"TRH_review_1", overall_rating:10.0,comment:"the most pleasant hotel experience I've ever had even for such a short stay. I can't wait to go back."}),
+(Trh_review_2:Review  {name:"TRH_review_2", overall_rating:9.0,comment:"Very enjoyable, will definitely return"}),
+(Rih_review_1:Review {name:"RIH_review_1",  overall_rating:10.0,comment:"Overnight respite while touring Killarney. Ate breakfast and dinner in."}),
+(Rih_review_2:Review  {name:"RIH_review_2", overall_rating:9.0,comment:"Perfect venue in this town"})
+
+
+CREATE
+  (Tah_review_1)-[:review]->(tral_hotel_1),
+  (Tah_review_2)-[:review]->(tral_hotel_1)
+
+CREATE
+  (Trh_review_1)-[:review]->(tral_hotel_2),
+  (Trh_review_2)-[:review]->(tral_hotel_2)
+
+CREATE
+  (Rih_review_1)-[:review]->(tral_hotel_3),
+  (Rih_review_2)-[:review]->(tral_hotel_3)
+
+
+
+CREATE
+(tral_transport:Transport {name:"Tralee Transport"})
+
+
+CREATE
+  (tral)-[:TRALEE_TRANSPORT]->(tral_transport)
+
+
+
+CREATE
+(tral_dub_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"3 hr 52 min", source_station:"Tralee", departure:17.05, destination_station:"Dublin Heuston", arrival:21.06})
+
+CREATE
+(dub_tral_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"3 hr 55 min", source_station:"Dublin Heuston", departure:17.05, destination_station:"Tralee", arrival:21.00})
+
+CREATE
+  (tral_transport)-[:transport_from]->(tral_dub_irish_rail)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_tral_irish_rail)-[:transport_to]->(tral_transport)
+
+
+
+
+CREATE
+(tral_dub_bus:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"4 hr 30 min", source_station:"Tralee", departure:15.15, destination_station:"Bachelors Walk, stop 7622", arrival:20.05 })
+
+CREATE
+(dub_tral_bus:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"4 hr 30 min", source_station:"Dublin City South, Burgh Quay, stop 339", departure:16.15, destination_station:"Tralee", arrival:20.54 })
+
+CREATE
+  (tral_transport)-[:transport_from]->(tral_dub_bus)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_tral_bus)-[:transport_to]->(tral_transport)
+
+
+CREATE
+(slig_tourist_places:Tourist_Places {name:"Sligo Tourist Places"})
+
+CREATE
+(slig_tourist_1:Tourist {name:"Carrowmore Megalithic Cemetery"}),
+(slig_tourist_2:Tourist {name:"Lough Gill"}),
+(slig_tourist_3:Tourist {name:"Benbulben"}),
+(slig_tourist_4:Tourist{name:"O'Dowd Castle"}),
+(slig_tourist_5:Tourist {name:"Strandhill"})
+
+CREATE
+  (slig)-[:SLIGO_TOURIST_PLACES]->(slig_tourist_places)
+
+
+CREATE
+  (slig_tourist_places)-[:place]->(slig_tourist_1),
+  (slig_tourist_places)-[:place]->(slig_tourist_2),
+  (slig_tourist_places)-[:place]->(slig_tourist_3),
+  (slig_tourist_places)-[:place]->(slig_tourist_4),
+  (slig_tourist_places)-[:place]->(slig_tourist_5)
+
+
+
+CREATE
+(slig_hotels:Cities_Hotels {name:"Sligo Hotels"})
+
+CREATE
+(slig_hotel_1:Hotel {name:"Clayton Hotel & Leisure Club Sligo",price:199,ratings:8.1}),
+(slig_hotel_2:Hotel {name:"Castle Dargan Hotel",price:145,ratings:7.8}),
+(slig_hotel_3:Hotel {name:"Radisson BLU Hotel & Spa",price:190,ratings:8.4})
+
+
+CREATE
+  (slig)-[:SLIGO_HOTELS]->(slig_hotels)
+
+
+CREATE
+  (slig_hotels)-[:hotel]->(slig_hotel_1),
+  (slig_hotels)-[:hotel]->(slig_hotel_2),
+  (slig_hotels)-[:hotel]->(slig_hotel_3)
+
+CREATE
+(Chlcs_review_1:Review {name:"CHLCS_review_1",  overall_rating:9.0,comment:"Really enjoyed it and would like to revisit"}),
+(Chlcs_review_2:Review {name:"CHLCS_review_2", overall_rating:9.0,comment:"The staff at the Clayton Sligo were brilliant, they were very polite and extremely helpful."}),
+(Cdh_review_1:Review {name:"CDH_review_1", overall_rating:10.0,comment:"Well recommended, hotel in a lovely setting, peaceful and homely."}),
+(Cdh_review_2:Review  {name:"CDH_review_2", overall_rating:8.0,comment:"A nice stay with good rooms in a quiet location"}),
+(Rbhss_review_1:Review {name:"RBHSS_review_1",  overall_rating:10.0,comment:"Buffet at breakfast was delicious, the hotel Is very nice, the staff very good"}),
+(Rbhss_review_2:Review  {name:"RBHSS_review_2", overall_rating:9.0,comment:"Cant fault the Food, staff or hotel service. Oh and the bed was so comfy."})
+
+
+CREATE
+  (Chlcs_review_1)-[:review]->(slig_hotel_1),
+  (Chlcs_review_2)-[:review]->(slig_hotel_1)
+
+CREATE
+  (Cdh_review_1)-[:review]->(slig_hotel_2),
+  (Cdh_review_2)-[:review]->(slig_hotel_2)
+
+CREATE
+  (Rbhss_review_1)-[:review]->(slig_hotel_3),
+  (Rbhss_review_2)-[:review]->(slig_hotel_3)
+
+
+
+CREATE
+(slig_transport:Transport {name:"Sligo Transport"})
+
+
+CREATE
+  (slig)-[:Sligo_TRANSPORT]->(slig_transport)
+
+
+
+CREATE
+(slig_dub_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"3 hr 42 min", source_station:"Sligo", departure:16.55 , destination_station:"Connolly", arrival:20.37 })
+
+CREATE
+(dub_slig_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"3 hr 10 min", source_station:"Connolly", departure:16.00, destination_station:"Sligo", arrival:19.10})
+
+CREATE
+  (slig_transport)-[:transport_from]->(slig_dub_irish_rail)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_slig_irish_rail)-[:transport_to]->(slig_transport)
+
+
+
+
+CREATE
+(slig_dub_bus:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"4 hr 30 min", source_station:"Tralee", departure:15.15, destination_station:"Bachelors Walk, stop 7622", arrival:20.05})
+
+CREATE
+(dub_slig_bus:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"4 hr 30 min", source_station:"Dublin City South, Burgh Quay, stop 339", departure:16.15, destination_station:"Tralee", arrival:20.54})
+
+CREATE
+  (slig_transport)-[:transport_from]->(slig_dub_bus)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_slig_bus)-[:transport_to]->(slig_transport)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE
+(wat_tourist_places:Tourist_Places {name:"Waterford Tourist Places"})
+
+CREATE
+(wat_tourist_1:Tourist{name:"Christ Church Cathedral"}),
+(wat_tourist_2:Tourist {name:"Curraghmore House & Gardens"}),
+(wat_tourist_3:Tourist {name:"The Rock of Cashel"}),
+(wat_tourist_4:Tourist {name:"The Medieval Museum"}),
+(wat_tourist_5:Tourist {name:"Viking Museum at Reginald's Tower"})
+
+CREATE
+  (wat)-[:WATERFORD_TOURIST_PLACES]->(wat_tourist_places)
+
+
+CREATE
+  (wat_tourist_places)-[:place]->(wat_tourist_1),
+  (wat_tourist_places)-[:place]->(wat_tourist_2),
+  (wat_tourist_places)-[:place]->(wat_tourist_3),
+  (wat_tourist_places)-[:place]->(wat_tourist_4),
+  (wat_tourist_places)-[:place]->(wat_tourist_5)
+
+
+
+CREATE
+(wat_hotels:Cities_Hotels {name:"Waterford Hotels"})
+
+CREATE
+(wat_hotel_1:Hotel {name:"Waterford Viking Hotel",price:184,ratings:8.1}),
+(wat_hotel_2:Hotel {name:"Faithlegg Hotel",price:239,ratings:8.7}),
+(wat_hotel_3:Hotel {name:"Greenway Manor Hotel",price:168,ratings:8.2})
+
+
+CREATE
+  (wat)-[:WATERFORD_HOTELS]->(wat_hotels)
+
+
+CREATE
+  (wat_hotels)-[:hotel]->(wat_hotel_1),
+  (wat_hotels)-[:hotel]->(wat_hotel_2),
+  (wat_hotels)-[:hotel]->(wat_hotel_3)
+
+CREATE
+(Wvh_review_1:Review {name:"WVH_review_1",  overall_rating:9.0,comment:"We’ll choose Viking again!"}),
+(Wvh_review_2:Review  {name:"WVH_review_2", overall_rating:9.0,comment:"lovely friendly hotel. evening meal was excellent"}),
+(Fhh_review_1:Review {name:"FHH_review_1", overall_rating:10.0,comment:"Very enjoyable with a high standard except for the points regarding menu and changing of linen."}),
+(Fhh_review_2:Review  {name:"FHH_review_2", overall_rating:9.0,comment:"We thoroughly enjoyed our stay and will definitely be aiming to return."}),
+(Gmh_review_1:Review {name:"GMH_review_1",  overall_rating:8.0,comment:"Lovely hotel but ask in advance if travelling with young family."}),
+(Gmh_review_2:Review {name:"GMH_review_2", overall_rating:7.0,comment:"Would certainly stay again. Staff throughout the hotel were helpful, friendly and welcoming"})
+
+
+CREATE
+  (Wvh_review_1)-[:review]->(wat_hotel_1),
+  (Wvh_review_2)-[:review]->(wat_hotel_1)
+
+CREATE
+  (Fhh_review_1)-[:review]->(wat_hotel_2),
+  (Fhh_review_2)-[:review]->(wat_hotel_2)
+
+CREATE
+  (Gmh_review_1)-[:review]->(wat_hotel_3),
+  (Gmh_review_2)-[:review]->(wat_hotel_3)
+
+
+
+CREATE
+(wat_transport:Transport {name:"Wat Transport"})
+
+
+CREATE
+  (wat)-[:WAT_TRANSPORT]->(wat_transport)
+
+
+
+CREATE
+(wat_dub_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"2 hr", source_station:"Waterford (Plunkett)", departure:16.05, destination_station:"Dublin Heuston", arrival:18.05})
+
+CREATE
+(dub_wat_irish_rail:transport  {name:"By_rail",carrier:"Irish Rail", duration:"1 hr 58 min", source_station:"Dublin Heuston", departure:16.15 , destination_station:"Waterford (Plunkett)", arrival:18.13})
+
+CREATE
+  (wat_transport)-[:transport_from]->(wat_dub_irish_rail)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_wat_irish_rail)-[:transport_to]->(wat_transport)
+
+
+
+
+CREATE
+(wat_dub_bus:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"4 hr 30 min", source_station:"Tralee", departure:15.15 , destination_station:"Bachelors Walk, stop 7622", arrival:20.05})
+
+CREATE
+(dub_wat_bus:transport  {name:"By_Bus",carrier:"Dublin Coach", duration:"4 hr 30 min", source_station:"Dublin City South, Burgh Quay, stop 339", departure:16.15 , destination_station:"Tralee", arrival:20.54})
+
+CREATE
+  (wat_transport)-[:transport_from]->(wat_dub_bus)-[:transport_to]->(dub_transport)
+
+CREATE
+  (dub_transport)-[:transport_from]->(dub_wat_bus)-[:transport_to]->(wat_transport)
+
+
+
+
+
+
